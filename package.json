@@ -8,11 +8,13 @@
     "clean": "rm -rf __lwr_cache__",
     "dev": "node scripts/start-server.mjs",
     "start": "MODE=prod node scripts/start-server.mjs",
+    "start:warmup": "WARMUP=true yarn start",
     "start:amd": "MODE=compat node scripts/start-server.mjs"
   },
   "dependencies": {
+    "lightning-base-components": "1.14.4-alpha",
     "lwc": "^2.5.1",
-    "lwr": "^0.4.4"
+    "lwr": "0.6.0"
   },
   "engines": {
     "node": ">=14.15.4 <17"

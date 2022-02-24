@@ -1,11 +1,14 @@
 {
-    "lwc": { "modules": [{ "dir": "$rootDir/src/modules" }] },
+    "lwc": { "modules": [{ "dir": "$rootDir/src/modules" }, { "npm": "lightning-base-components" }] },
     "bundleConfig": { "exclude": ["lwc"] },
     "routes": [
         {
             "id": "example",
             "path": "/",
-            "rootComponent": "example/app"
+            "rootComponent": "example/app",
+            "bootstrap": {
+                "syntheticShadow": true
+            }
         }
     ]
 }
